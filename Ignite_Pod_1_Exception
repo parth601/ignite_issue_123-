@@ -1,0 +1,410 @@
+cp: can't stat '/opt/ignite/apache-ignite/libs/optional/ignite-indexing': No such file or directory
+Ignite Command Line Startup, ver. 2.8.1#20200521-sha1:86422096
+2020 Copyright(C) Apache Software Foundation
+
+[04:28:25,790][WARNING][main][G] Ignite work directory is not provided, automatically resolved to: /opt/ignite/apache-ignite/work
+[04:28:25,798][WARNING][main][G] Consistent ID is not set, it is recommended to set consistent ID for production clusters (use IgniteConfiguration.setConsistentId property)
+[04:28:25,934][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.8.1#20200521-sha1:86422096
+>>> 2020 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[04:28:25,935][INFO][main][IgniteKernal] Config URL: http://10.198.15.201/v1/configs/apache-ignite/prod/2.8.1/ignite-persistence-config.xml
+[04:28:25,957][INFO][main][IgniteKernal] IgniteConfiguration [igniteInstanceName=null, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=3, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=32, sqlQryHistSize=1000, dfltQryTimeout=0, igniteHome=/opt/ignite/apache-ignite, igniteWorkDir=/opt/ignite/apache-ignite/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e, nodeId=364708ec-e9cf-4d61-9492-0932970cd342, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, netCompressionLevel=1, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, soLinger=5, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null, skipAddrsRandomization=false], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@2e1d27ba, chConnPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=10000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=5000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@61d6015a[Count = 1], stopping=false, metricsLsnr=null], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@2525ff7e, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@4e268090, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@1bb266b3, clientMode=false, rebalanceThreadPoolSize=4, rebalanceTimeout=10000, rebalanceBatchesPrefetchCnt=3, rebalanceThrottle=0, rebalanceBatchSize=524288, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, deadlockTimeout=10000, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=3, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=BinaryConfiguration [idMapper=null, nameMapper=null, serializer=null, compactFooter=false], memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=8192, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default_region, maxSize=209715200, initSize=104857600, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=true, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=true, checkpointPageBufSize=0, lazyMemoryAllocation=true], dataRegions=DataRegionConfiguration[] [DataRegionConfiguration [name=no_persistence_region, maxSize=3358234214, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=true, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0, lazyMemoryAllocation=true], DataRegionConfiguration [name=hot_region, maxSize=5368709120, initSize=524288000, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=true, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=true, checkpointPageBufSize=0, lazyMemoryAllocation=true]], storagePath=/persistence, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=/wal, walArchivePath=/wal, metricsEnabled=true, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@1f97cf0d, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null, walPageCompression=LZ4, walPageCompressionLevel=10], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=24, idleTimeout=0, handshakeTimeout=10000, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null, thinCliCfg=ThinClientConfiguration [maxActiveTxPerConn=100]], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=true, failureHnd=null, commFailureRslvr=null]
+[04:28:25,958][INFO][main][IgniteKernal] Daemon mode: off
+[04:28:25,958][INFO][main][IgniteKernal] OS: Linux 5.4.0-1061-azure amd64
+[04:28:25,958][INFO][main][IgniteKernal] OS user: root
+[04:28:25,959][INFO][main][IgniteKernal] PID: 73
+[04:28:25,959][INFO][main][IgniteKernal] Language runtime: Java Platform API Specification ver. 1.8
+[04:28:25,959][INFO][main][IgniteKernal] VM information: OpenJDK Runtime Environment 1.8.0_212-b04 IcedTea OpenJDK 64-Bit Server VM 25.212-b04
+[04:28:25,960][INFO][main][IgniteKernal] VM total memory: 4.0GB
+[04:28:25,961][INFO][main][IgniteKernal] Remote Management [restart: on, REST: on, JMX (remote: on, port: 1099, auth: off, ssl: off)]
+[04:28:25,962][INFO][main][IgniteKernal] Logger: JavaLogger [quiet=false, config=null]
+[04:28:25,962][INFO][main][IgniteKernal] IGNITE_HOME=/opt/ignite/apache-ignite
+[04:28:25,962][INFO][main][IgniteKernal] VM arguments: [-XX:+AggressiveOpts, -Xms1000m, -Xmx4096m, -XX:+AlwaysPreTouch, -XX:+UseG1GC, -XX:+ScavengeBeforeFullGC, -XX:+DisableExplicitGC, -Djava.net.preferIPv4Stack=true, -Dfile.encoding=UTF-8, -DIGNITE_QUIET=false, -DIGNITE_SUCCESS_FILE=/opt/ignite/apache-ignite/work/ignite_success_acaec60e-4f22-457f-81ff-ed6866cc833a, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=1099, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -DIGNITE_HOME=/opt/ignite/apache-ignite, -DIGNITE_PROG_NAME=/opt/ignite/apache-ignite/bin/ignite.sh]
+[04:28:25,963][INFO][main][IgniteKernal] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[04:28:25,963][INFO][main][IgniteKernal] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache'], in 'default_region' dataRegion: ['PARTITIONED*', 'REPLICATED*', 'LOCAL*']]
+[04:28:25,963][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[04:28:25,973][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /opt/ignite/apache-ignite/libs/licenses
+[04:28:26,111][INFO][main][IgnitePluginProcessor] Configured plugins:
+[04:28:26,112][INFO][main][IgnitePluginProcessor]   ^-- None
+[04:28:26,112][INFO][main][IgnitePluginProcessor] 
+[04:28:26,120][INFO][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[04:28:26,387][INFO][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[04:28:26,390][WARNING][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[04:28:26,410][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[04:28:26,438][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[04:28:26,443][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[04:28:26,494][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0, locNodeId=364708ec-e9cf-4d61-9492-0932970cd342]
+[04:28:26,495][WARNING][main][PdsFoldersResolver] There is other non-empty storage folder under storage base directory [/persistence/lost+found, 0 bytes, modified 01/01/1970 12:00 AM ]
+[04:28:26,507][INFO][main][PdsFoldersResolver] Successfully locked persistence storage folder [/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556]
+[04:28:26,507][INFO][main][PdsFoldersResolver] Consistent ID used for local node is [1e721b99-7699-4038-8ebf-9242a660c556] according to persistence data storage folders
+[04:28:26,508][INFO][main][CacheObjectBinaryProcessorImpl] Resolved directory for serialized binary metadata: /opt/ignite/apache-ignite/work/binary_meta/node00-1e721b99-7699-4038-8ebf-9242a660c556
+[04:28:26,738][INFO][main][FilePageStoreManager] Resolved page store work directory: /persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556
+[04:28:26,742][INFO][main][FileWriteAheadLogManager] Resolved write ahead log work directory: /wal/node00-1e721b99-7699-4038-8ebf-9242a660c556
+[04:28:26,742][INFO][main][FileWriteAheadLogManager] Resolved write ahead log archive directory: /wal/node00-1e721b99-7699-4038-8ebf-9242a660c556
+[04:28:26,777][INFO][main][FileHandleManagerImpl] Initialized write-ahead log manager [mode=LOG_ONLY]
+[04:28:26,780][WARNING][main][GridCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[04:28:26,809][INFO][main][GridCacheDatabaseSharedManager] Configured data regions initialized successfully [total=6]
+[04:28:26,836][INFO][main][PartitionsEvictManager] Evict partition permits=2
+[04:28:26,881][WARNING][main][IgniteH2Indexing] Serialization of Java objects in H2 was enabled.
+[04:28:27,121][INFO][main][ClientListenerProcessor] Client connector processor has started on TCP port 10800
+[04:28:27,205][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[04:28:27,610][INFO][main][GridJettyRestProtocol] Command protocol successfully started [name=Jetty REST, host=/0.0.0.0, port=8080]
+[04:28:27,671][INFO][main][IgniteKernal] Non-loopback local IPs: 10.184.1.150
+[04:28:27,671][INFO][main][IgniteKernal] Enabled local MACs: D615F4B447F8
+[04:28:28,057][INFO][main][GridCacheDatabaseSharedManager] Read checkpoint status [startMarker=/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556/cp/1637569071002-23586844-1d11-480d-a3a2-85be6f3bb549-START.bin, endMarker=/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556/cp/1637569071002-23586844-1d11-480d-a3a2-85be6f3bb549-END.bin]
+[04:28:28,067][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=12600, tableSize=994.0 KiB, checkpointBuffer=100.0 MiB]
+[04:28:28,070][INFO][main][GridCacheDatabaseSharedManager] Checking memory state [lastValidPos=FileWALPointer [idx=513, fileOff=45841861, len=79795], lastMarked=FileWALPointer [idx=513, fileOff=45841861, len=79795], lastCheckpointId=23586844-1d11-480d-a3a2-85be6f3bb549]
+[04:28:28,142][INFO][main][GridCacheDatabaseSharedManager] Found last checkpoint marker [cpId=23586844-1d11-480d-a3a2-85be6f3bb549, pos=FileWALPointer [idx=513, fileOff=45841861, len=79795]]
+[04:28:28,963][INFO][main][GridCacheDatabaseSharedManager] Applying lost cache updates since last checkpoint record [lastMarked=FileWALPointer [idx=513, fileOff=45841861, len=79795], lastCheckpointId=23586844-1d11-480d-a3a2-85be6f3bb549]
+[04:28:29,457][INFO][main][GridCacheDatabaseSharedManager] Finished applying WAL changes [updatesApplied=0, time=495 ms]
+[04:28:29,458][INFO][main][GridCacheProcessor] Restoring partition state for local groups.
+[04:28:29,458][INFO][main][GridCacheProcessor] Finished restoring partition state for local groups [groupsProcessed=0, partitionsProcessed=0, time=0ms]
+[04:28:29,498][INFO][main][GridClusterStateProcessor] Restoring history for BaselineTopology[id=0]
+[04:28:29,523][WARNING][main][GridCacheProcessor] AffinityFunction configuration parameter will be ignored for local cache [cacheName=LOCAL*]
+[04:28:29,618][INFO][main][DistributedBaselineConfiguration] Baseline parameter 'baselineAutoAdjustEnabled' was changed from 'null' to 'false'
+[04:28:29,618][INFO][main][DistributedBaselineConfiguration] Baseline parameter 'baselineAutoAdjustTimeout' was changed from 'null' to '300000'
+[04:28:29,619][INFO][main][IgniteH2Indexing] SQL parameter 'sql.disabledFunctions' was changed from 'null' to '[FILE_WRITE, CANCEL_SESSION, MEMORY_USED, CSVREAD, LINK_SCHEMA, MEMORY_FREE, FILE_READ, CSVWRITE, SESSION_ID, LOCK_MODE]'
+[04:28:29,624][INFO][main][FilePageStoreManager] Cleanup cache stores [total=1, left=0, cleanFiles=false]
+[04:28:29,634][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=12600, tableSize=994.0 KiB, checkpointBuffer=100.0 MiB]
+[04:28:29,634][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=12600, tableSize=994.0 KiB, checkpointBuffer=100.0 MiB]
+[04:28:29,636][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=100.0 MiB, pages=12600, tableSize=994.0 KiB, checkpointBuffer=100.0 MiB]
+[04:28:29,637][INFO][main][GridCacheDatabaseSharedManager] Configured data regions started successfully [total=6]
+[04:28:29,638][INFO][main][GridCacheDatabaseSharedManager] Starting binary memory restore for: [1456055304, -2100569601, 78569, 2077491, 2435688]
+[04:28:29,965][INFO][main][GridCacheDatabaseSharedManager] Read checkpoint status [startMarker=/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556/cp/1637569071002-23586844-1d11-480d-a3a2-85be6f3bb549-START.bin, endMarker=/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556/cp/1637569071002-23586844-1d11-480d-a3a2-85be6f3bb549-END.bin]
+[04:28:29,965][INFO][main][GridCacheDatabaseSharedManager] Checking memory state [lastValidPos=FileWALPointer [idx=513, fileOff=45841861, len=79795], lastMarked=FileWALPointer [idx=513, fileOff=45841861, len=79795], lastCheckpointId=23586844-1d11-480d-a3a2-85be6f3bb549]
+[04:28:29,990][INFO][main][GridCacheDatabaseSharedManager] Found last checkpoint marker [cpId=23586844-1d11-480d-a3a2-85be6f3bb549, pos=FileWALPointer [idx=513, fileOff=45841861, len=79795]]
+[04:28:30,660][INFO][main][GridCacheDatabaseSharedManager] Binary memory state restored at node startup [restoredPtr=FileWALPointer [idx=518, fileOff=45831838, len=0]]
+[04:28:30,660][INFO][main][FileWriteAheadLogManager] Resuming logging to WAL segment [file=/wal/node00-1e721b99-7699-4038-8ebf-9242a660c556/0000000000000518.wal, offset=45831838, ver=2]
+[04:28:30,696][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=5.0 GiB, pages=645216, tableSize=49.7 MiB, checkpointBuffer=1.3 GiB]
+[04:28:30,823][INFO][main][CacheCompressionManager] <ASSETSPEC> Disk page compression is enabled [cache=ASSETSPEC, compression=LZ4, level=10]
+[04:28:31,013][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ASSETSPEC, id=-192152949, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,018][INFO][main][CacheCompressionManager] <SETPOINT_OBJECT_SM_STATE> Disk page compression is enabled [cache=SETPOINT_OBJECT_SM_STATE, compression=LZ4, level=10]
+[04:28:31,022][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SETPOINT_OBJECT_SM_STATE, id=1467649915, group=OSM, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=2, mvcc=false]
+[04:28:31,026][INFO][main][CacheCompressionManager] <ASSETOUTPUTSERVICE> Disk page compression is enabled [cache=ASSETOUTPUTSERVICE, compression=LZ4, level=10]
+[04:28:31,030][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ASSETOUTPUTSERVICE, id=-748293724, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,033][INFO][main][PageMemoryImpl] Started page memory [memoryAllocated=200.0 MiB, pages=25203, tableSize=1.9 MiB, checkpointBuffer=200.0 MiB]
+[04:28:31,048][INFO][main][CacheCompressionManager] <CACHE_LOAD_META_DATA> Disk page compression is enabled [cache=CACHE_LOAD_META_DATA, compression=LZ4, level=10]
+[04:28:31,051][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=CACHE_LOAD_META_DATA, id=1456055304, dataRegionName=default_region, mode=PARTITIONED, atomicity=ATOMIC, backups=2, mvcc=false]
+[04:28:31,054][INFO][main][CacheCompressionManager] <SCAMONITORASSETMAP> Disk page compression is enabled [cache=SCAMONITORASSETMAP, compression=LZ4, level=10]
+[04:28:31,056][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SCAMONITORASSETMAP, id=-1982418027, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,059][INFO][main][CacheCompressionManager] <MSACONFIG> Disk page compression is enabled [cache=MSACONFIG, compression=LZ4, level=10]
+[04:28:31,062][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=MSACONFIG, id=735998557, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,065][INFO][main][CacheCompressionManager] <ISOCONFIG> Disk page compression is enabled [cache=ISOCONFIG, compression=LZ4, level=10]
+[04:28:31,067][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ISOCONFIG, id=-1083968537, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,071][INFO][main][CacheCompressionManager] <SERVICECONFIG> Disk page compression is enabled [cache=SERVICECONFIG, compression=LZ4, level=10]
+[04:28:31,073][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SERVICECONFIG, id=1503446551, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,076][INFO][main][CacheCompressionManager] <OMPOINTLISTORGPOLICY> Disk page compression is enabled [cache=OMPOINTLISTORGPOLICY, compression=LZ4, level=10]
+[04:28:31,079][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=OMPOINTLISTORGPOLICY, id=676485382, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,083][INFO][main][CacheCompressionManager] <SCACONFIG> Disk page compression is enabled [cache=SCACONFIG, compression=LZ4, level=10]
+[04:28:31,086][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SCACONFIG, id=661012083, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,088][INFO][main][CacheCompressionManager] <MSAMODEOPDEF> Disk page compression is enabled [cache=MSAMODEOPDEF, compression=LZ4, level=10]
+[04:28:31,090][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=MSAMODEOPDEF, id=-877564506, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,093][INFO][main][CacheCompressionManager] <MAINTENANCEFIXTYPECONFIG> Disk page compression is enabled [cache=MAINTENANCEFIXTYPECONFIG, compression=LZ4, level=10]
+[04:28:31,095][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=MAINTENANCEFIXTYPECONFIG, id=1078536350, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,097][INFO][main][CacheCompressionManager] <ASSETCLASS> Disk page compression is enabled [cache=ASSETCLASS, compression=LZ4, level=10]
+[04:28:31,099][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ASSETCLASS, id=-1676672888, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,101][INFO][main][CacheCompressionManager] <ROOTCAUSEFIXTYPEMAPPING> Disk page compression is enabled [cache=ROOTCAUSEFIXTYPEMAPPING, compression=LZ4, level=10]
+[04:28:31,103][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ROOTCAUSEFIXTYPEMAPPING, id=-262255226, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,106][INFO][main][CacheCompressionManager] <ROOTCAUSEDETAILCONFIG> Disk page compression is enabled [cache=ROOTCAUSEDETAILCONFIG, compression=LZ4, level=10]
+[04:28:31,108][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ROOTCAUSEDETAILCONFIG, id=-56409862, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,111][INFO][main][CacheCompressionManager] <DPT_OBJECT_SM_STATE> Disk page compression is enabled [cache=DPT_OBJECT_SM_STATE, compression=LZ4, level=10]
+[04:28:31,114][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=DPT_OBJECT_SM_STATE, id=-1714704811, group=OSM1, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,118][INFO][main][CacheCompressionManager] <SCASERVICEMAP> Disk page compression is enabled [cache=SCASERVICEMAP, compression=LZ4, level=10]
+[04:28:31,122][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SCASERVICEMAP, id=-601417416, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,128][INFO][main][CacheCompressionManager] <SITE> Disk page compression is enabled [cache=SITE, compression=LZ4, level=10]
+[04:28:31,138][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SITE, id=2545479, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,142][INFO][main][CacheCompressionManager] <ROOTCAUSECONFIG> Disk page compression is enabled [cache=ROOTCAUSECONFIG, compression=LZ4, level=10]
+[04:28:31,144][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ROOTCAUSECONFIG, id=1015930537, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,147][INFO][main][CacheCompressionManager] <METERCONFIG> Disk page compression is enabled [cache=METERCONFIG, compression=LZ4, level=10]
+[04:28:31,150][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=METERCONFIG, id=-1353959445, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,153][INFO][main][CacheCompressionManager] <ISOZONECONFIG> Disk page compression is enabled [cache=ISOZONECONFIG, compression=LZ4, level=10]
+[04:28:31,156][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ISOZONECONFIG, id=1995752467, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,159][INFO][main][CacheCompressionManager] <RBACGROUPCACHE> Disk page compression is enabled [cache=RBACGROUPCACHE, compression=LZ4, level=10]
+[04:28:31,168][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=RBACGROUPCACHE, id=743629877, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,170][INFO][main][CacheCompressionManager] <ASSET> Disk page compression is enabled [cache=ASSET, compression=LZ4, level=10]
+[04:28:31,241][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ASSET, id=62583504, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,245][INFO][main][CacheCompressionManager] <PAI_OBJECT_SM_STATE> Disk page compression is enabled [cache=PAI_OBJECT_SM_STATE, compression=LZ4, level=10]
+[04:28:31,248][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=PAI_OBJECT_SM_STATE, id=1106213253, group=OSM, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=2, mvcc=false]
+[04:28:31,252][INFO][main][CacheCompressionManager] <ORGANISATION> Disk page compression is enabled [cache=ORGANISATION, compression=LZ4, level=10]
+[04:28:31,254][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ORGANISATION, id=-999167782, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,258][INFO][main][CacheCompressionManager] <POINTLIST> Disk page compression is enabled [cache=POINTLIST, compression=LZ4, level=10]
+[04:28:31,262][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=POINTLIST, id=56872462, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,265][INFO][main][CacheCompressionManager] <SITEEXTENDEDATTR> Disk page compression is enabled [cache=SITEEXTENDEDATTR, compression=LZ4, level=10]
+[04:28:31,269][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SITEEXTENDEDATTR, id=-1252257935, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,272][INFO][main][CacheCompressionManager] <MSASCACONFIGMAP> Disk page compression is enabled [cache=MSASCACONFIGMAP, compression=LZ4, level=10]
+[04:28:31,275][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=MSASCACONFIGMAP, id=-999658300, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,278][INFO][main][CacheCompressionManager] <USERGROUP> Disk page compression is enabled [cache=USERGROUP, compression=LZ4, level=10]
+[04:28:31,280][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=USERGROUP, id=-1161510540, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,283][INFO][main][CacheCompressionManager] <ASSETSERVICE> Disk page compression is enabled [cache=ASSETSERVICE, compression=LZ4, level=10]
+[04:28:31,286][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ASSETSERVICE, id=460625349, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,289][INFO][main][CacheCompressionManager] <ASSETINPUTSERVICE> Disk page compression is enabled [cache=ASSETINPUTSERVICE, compression=LZ4, level=10]
+[04:28:31,291][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ASSETINPUTSERVICE, id=-1152771461, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,315][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=ignite-sys-cache, id=-2100569601, dataRegionName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false]
+[04:28:31,319][INFO][main][CacheCompressionManager] <SITEDET> Disk page compression is enabled [cache=SITEDET, compression=LZ4, level=10]
+[04:28:31,322][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=SITEDET, id=-1476978868, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,325][INFO][main][CacheCompressionManager] <CLUSTERSITEAPPINTERNALID> Disk page compression is enabled [cache=CLUSTERSITEAPPINTERNALID, compression=LZ4, level=10]
+[04:28:31,328][INFO][main][GridCacheProcessor] Started cache in recovery mode [name=CLUSTERSITEAPPINTERNALID, id=883309272, group=CRTX, dataRegionName=hot_region, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false]
+[04:28:31,329][INFO][main][GridCacheDatabaseSharedManager] Binary recovery performed in 1691 ms.
+[04:28:31,330][INFO][main][GridCacheDatabaseSharedManager] Read checkpoint status [startMarker=/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556/cp/1637569071002-23586844-1d11-480d-a3a2-85be6f3bb549-START.bin, endMarker=/persistence/node00-1e721b99-7699-4038-8ebf-9242a660c556/cp/1637569071002-23586844-1d11-480d-a3a2-85be6f3bb549-END.bin]
+[04:28:31,331][INFO][main][GridCacheDatabaseSharedManager] Applying lost cache updates since last checkpoint record [lastMarked=FileWALPointer [idx=513, fileOff=45841861, len=79795], lastCheckpointId=23586844-1d11-480d-a3a2-85be6f3bb549]
+[04:28:31,913][INFO][main][GridCacheDatabaseSharedManager] Finished applying WAL changes [updatesApplied=0, time=589 ms]
+[04:28:31,914][INFO][main][GridCacheProcessor] Restoring partition state for local groups.
+[04:28:37,216][INFO][main][GridCacheProcessor] Finished restoring partition state for local groups [groupsProcessed=5, partitionsProcessed=4196, time=5305ms]
+[04:28:37,267][INFO][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[04:28:37,729][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=57675]
+[04:28:37,745][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=57675]
+[04:28:37,746][INFO][tcp-disco-sock-reader-[]-#4][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:57675, rmtPort=57675]
+[04:28:37,747][INFO][tcp-disco-sock-reader-[]-#4][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=9ef34b53-64ff-4901-ba08-87b7009c7829, rmtAddr=/10.184.1.237:57675, rmtPort=57675]
+[04:28:37,749][INFO][tcp-disco-sock-reader-[]-#4][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=9ef34b53-64ff-4901-ba08-87b7009c7829, rmtAddr=/10.184.1.237:57675, rmtPort=57675]
+[04:28:37,749][INFO][tcp-disco-sock-reader-[]-#4][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:57675, rmtPort=57675
+[04:28:37,763][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=48601]
+[04:28:37,764][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=48601]
+[04:28:37,764][INFO][tcp-disco-sock-reader-[]-#5][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:48601, rmtPort=48601]
+[04:28:37,764][INFO][tcp-disco-sock-reader-[]-#5][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=9ef34b53-64ff-4901-ba08-87b7009c7829, rmtAddr=/10.184.1.237:48601, rmtPort=48601]
+[04:28:37,765][INFO][tcp-disco-sock-reader-[]-#5][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=9ef34b53-64ff-4901-ba08-87b7009c7829, rmtAddr=/10.184.1.237:48601, rmtPort=48601]
+[04:28:37,765][INFO][tcp-disco-sock-reader-[]-#5][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:48601, rmtPort=48601
+[04:28:37,769][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=39189]
+[04:28:37,770][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=39189]
+[04:28:37,770][INFO][tcp-disco-sock-reader-[]-#6][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:39189, rmtPort=39189]
+[04:28:37,771][INFO][tcp-disco-sock-reader-[9ef34b53 10.184.1.237:39189]-#6][TcpDiscoverySpi] Initialized connection with remote server node [nodeId=9ef34b53-64ff-4901-ba08-87b7009c7829, rmtAddr=/10.184.1.237:39189]
+[04:28:37,776][SEVERE][main][IgniteKernal] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.marshaller.MarshallerUtils$1@101cf747], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, soLinger=5, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null, skipAddrsRandomization=false]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:302)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:943)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1960)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1276)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2045)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1703)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1117)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:1035)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:921)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:820)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:690)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:659)
+	at org.apache.ignite.Ignition.start(Ignition.java:346)
+	at org.apache.ignite.startup.cmdline.CommandLineStartup.main(CommandLineStartup.java:300)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Conflicts during configuration merge for cache 'SETPOINT_OBJECT_SM_STATE' : 
+SETPOINT_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_ebd480b6_d893_44ca_9483_ce05ada51c3d_KEY, received=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_db1ec40d_b91d_4b03_83e7_a768c311f831_KEY
+valType is different: local=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_ebd480b6_d893_44ca_9483_ce05ada51c3d, received=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_db1ec40d_b91d_4b03_83e7_a768c311f831
+
+Conflicts during configuration merge for cache 'DPT_OBJECT_SM_STATE' : 
+DPT_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_DPT_OBJECT_SM_STATE_07165327_1f9a_427c_be23_6e5eb52cb853_KEY, received=SQL_CRTX_DPT_OBJECT_SM_STATE_d2df2f05_86c2_410b_9611_79610b08103f_KEY
+valType is different: local=SQL_CRTX_DPT_OBJECT_SM_STATE_07165327_1f9a_427c_be23_6e5eb52cb853, received=SQL_CRTX_DPT_OBJECT_SM_STATE_d2df2f05_86c2_410b_9611_79610b08103f
+
+Conflicts during configuration merge for cache 'PAI_OBJECT_SM_STATE' : 
+PAI_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_PAI_OBJECT_SM_STATE_9bac915f_3c2f_44d2_a041_6e6dc71700d1_KEY, received=SQL_CRTX_PAI_OBJECT_SM_STATE_2f33c7a5_3cc2_486a_8a5e_3d2a9b0dbed9_KEY
+valType is different: local=SQL_CRTX_PAI_OBJECT_SM_STATE_9bac915f_3c2f_44d2_a041_6e6dc71700d1, received=SQL_CRTX_PAI_OBJECT_SM_STATE_2f33c7a5_3cc2_486a_8a5e_3d2a9b0dbed9
+
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1997)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:1116)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:427)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:2099)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:299)
+	... 13 more
+[04:28:37,777][INFO][tcp-disco-sock-reader-[9ef34b53 10.184.1.237:39189]-#6][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:39189, rmtPort=39189
+[04:28:37,777][SEVERE][main][IgniteKernal] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1965)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1276)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2045)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1703)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1117)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:1035)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:921)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:820)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:690)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:659)
+	at org.apache.ignite.Ignition.start(Ignition.java:346)
+	at org.apache.ignite.startup.cmdline.CommandLineStartup.main(CommandLineStartup.java:300)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.marshaller.MarshallerUtils$1@101cf747], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, soLinger=5, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null, skipAddrsRandomization=false]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:302)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:943)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1960)
+	... 11 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Conflicts during configuration merge for cache 'SETPOINT_OBJECT_SM_STATE' : 
+SETPOINT_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_ebd480b6_d893_44ca_9483_ce05ada51c3d_KEY, received=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_db1ec40d_b91d_4b03_83e7_a768c311f831_KEY
+valType is different: local=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_ebd480b6_d893_44ca_9483_ce05ada51c3d, received=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_db1ec40d_b91d_4b03_83e7_a768c311f831
+
+Conflicts during configuration merge for cache 'DPT_OBJECT_SM_STATE' : 
+DPT_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_DPT_OBJECT_SM_STATE_07165327_1f9a_427c_be23_6e5eb52cb853_KEY, received=SQL_CRTX_DPT_OBJECT_SM_STATE_d2df2f05_86c2_410b_9611_79610b08103f_KEY
+valType is different: local=SQL_CRTX_DPT_OBJECT_SM_STATE_07165327_1f9a_427c_be23_6e5eb52cb853, received=SQL_CRTX_DPT_OBJECT_SM_STATE_d2df2f05_86c2_410b_9611_79610b08103f
+
+Conflicts during configuration merge for cache 'PAI_OBJECT_SM_STATE' : 
+PAI_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_PAI_OBJECT_SM_STATE_9bac915f_3c2f_44d2_a041_6e6dc71700d1_KEY, received=SQL_CRTX_PAI_OBJECT_SM_STATE_2f33c7a5_3cc2_486a_8a5e_3d2a9b0dbed9_KEY
+valType is different: local=SQL_CRTX_PAI_OBJECT_SM_STATE_9bac915f_3c2f_44d2_a041_6e6dc71700d1, received=SQL_CRTX_PAI_OBJECT_SM_STATE_2f33c7a5_3cc2_486a_8a5e_3d2a9b0dbed9
+
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1997)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:1116)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:427)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:2099)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:299)
+	... 13 more
+[04:28:37,783][INFO][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[04:28:37,792][INFO][main][GridJettyRestProtocol] Command protocol successfully stopped: Jetty REST
+[04:28:39,583][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=42107]
+[04:28:39,584][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=42107]
+[04:28:39,584][INFO][tcp-disco-sock-reader-[]-#7][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:42107, rmtPort=42107]
+[04:28:39,585][INFO][tcp-disco-sock-reader-[]-#7][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:42107, rmtPort=42107
+[04:28:39,791][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=58205]
+[04:28:39,791][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=58205]
+[04:28:39,792][INFO][tcp-disco-sock-reader-[]-#8][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:58205, rmtPort=58205]
+[04:28:39,793][INFO][tcp-disco-sock-reader-[]-#8][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:58205, rmtPort=58205
+[04:28:39,998][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=33501]
+[04:28:39,998][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=33501]
+[04:28:39,999][INFO][tcp-disco-sock-reader-[]-#9][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:33501, rmtPort=33501]
+[04:28:39,999][INFO][tcp-disco-sock-reader-[]-#9][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:33501, rmtPort=33501
+[04:28:40,204][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=45151]
+[04:28:40,204][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=45151]
+[04:28:40,205][INFO][tcp-disco-sock-reader-[]-#10][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:45151, rmtPort=45151]
+[04:28:40,206][INFO][tcp-disco-sock-reader-[]-#10][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:45151, rmtPort=45151
+[04:28:40,411][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=51765]
+[04:28:40,411][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=51765]
+[04:28:40,412][INFO][tcp-disco-sock-reader-[]-#11][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:51765, rmtPort=51765]
+[04:28:40,413][INFO][tcp-disco-sock-reader-[]-#11][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:51765, rmtPort=51765
+[04:28:40,618][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=56123]
+[04:28:40,618][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=56123]
+[04:28:40,619][INFO][tcp-disco-sock-reader-[]-#12][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:56123, rmtPort=56123]
+[04:28:40,619][INFO][tcp-disco-sock-reader-[]-#12][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:56123, rmtPort=56123
+[04:28:40,824][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=35219]
+[04:28:40,825][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=35219]
+[04:28:40,826][INFO][tcp-disco-sock-reader-[]-#13][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:35219, rmtPort=35219]
+[04:28:40,826][INFO][tcp-disco-sock-reader-[]-#13][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:35219, rmtPort=35219
+[04:28:41,031][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=43917]
+[04:28:41,032][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=43917]
+[04:28:41,032][INFO][tcp-disco-sock-reader-[]-#14][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:43917, rmtPort=43917]
+[04:28:41,033][INFO][tcp-disco-sock-reader-[]-#14][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:43917, rmtPort=43917
+[04:28:41,238][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=41497]
+[04:28:41,238][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=41497]
+[04:28:41,239][INFO][tcp-disco-sock-reader-[]-#15][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:41497, rmtPort=41497]
+[04:28:41,239][INFO][tcp-disco-sock-reader-[]-#15][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:41497, rmtPort=41497
+[04:28:41,445][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=39797]
+[04:28:41,445][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=39797]
+[04:28:41,446][INFO][tcp-disco-sock-reader-[]-#16][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:39797, rmtPort=39797]
+[04:28:41,447][INFO][tcp-disco-sock-reader-[]-#16][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:39797, rmtPort=39797
+[04:28:41,652][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=60731]
+[04:28:41,653][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=60731]
+[04:28:41,653][INFO][tcp-disco-sock-reader-[]-#17][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:60731, rmtPort=60731]
+[04:28:41,654][INFO][tcp-disco-sock-reader-[]-#17][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:60731, rmtPort=60731
+[04:28:41,860][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=48561]
+[04:28:41,860][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=48561]
+[04:28:41,861][INFO][tcp-disco-sock-reader-[]-#18][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:48561, rmtPort=48561]
+[04:28:41,861][INFO][tcp-disco-sock-reader-[]-#18][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:48561, rmtPort=48561
+[04:28:42,067][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=32951]
+[04:28:42,068][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=32951]
+[04:28:42,068][INFO][tcp-disco-sock-reader-[]-#19][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:32951, rmtPort=32951]
+[04:28:42,069][INFO][tcp-disco-sock-reader-[]-#19][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:32951, rmtPort=32951
+[04:28:42,274][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=43347]
+[04:28:42,275][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=43347]
+[04:28:42,275][INFO][tcp-disco-sock-reader-[]-#20][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:43347, rmtPort=43347]
+[04:28:42,276][INFO][tcp-disco-sock-reader-[]-#20][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:43347, rmtPort=43347
+[04:28:42,481][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=52651]
+[04:28:42,481][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=52651]
+[04:28:42,481][INFO][tcp-disco-sock-reader-[]-#21][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:52651, rmtPort=52651]
+[04:28:42,482][INFO][tcp-disco-sock-reader-[]-#21][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:52651, rmtPort=52651
+[04:28:42,687][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/10.184.1.237, rmtPort=60907]
+[04:28:42,687][INFO][tcp-disco-srvr-[:47500]-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/10.184.1.237, rmtPort=60907]
+[04:28:42,688][INFO][tcp-disco-sock-reader-[]-#22][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/10.184.1.237:60907, rmtPort=60907]
+[04:28:42,688][INFO][tcp-disco-sock-reader-[]-#22][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/10.184.1.237:60907, rmtPort=60907
+[04:28:42,806][INFO][main][TcpDiscoverySpi] No verification for local node leave has been received from coordinator (will stop node anyway).
+[04:28:42,817][INFO][main][GridCacheProcessor] Stopped cache [cacheName=CLUSTERSITEAPPINTERNALID, group=CRTX]
+[04:28:42,820][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SITEDET, group=CRTX]
+[04:28:42,821][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ASSETINPUTSERVICE, group=CRTX]
+[04:28:42,824][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ASSETSERVICE, group=CRTX]
+[04:28:42,825][INFO][main][GridCacheProcessor] Stopped cache [cacheName=USERGROUP, group=CRTX]
+[04:28:42,826][INFO][main][GridCacheProcessor] Stopped cache [cacheName=MSASCACONFIGMAP, group=CRTX]
+[04:28:42,828][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SITEEXTENDEDATTR, group=CRTX]
+[04:28:42,829][INFO][main][GridCacheProcessor] Stopped cache [cacheName=POINTLIST, group=CRTX]
+[04:28:42,830][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ORGANISATION, group=CRTX]
+[04:28:42,831][INFO][main][GridCacheProcessor] Stopped cache [cacheName=PAI_OBJECT_SM_STATE, group=OSM]
+[04:28:42,832][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ASSET, group=CRTX]
+[04:28:42,834][INFO][main][GridCacheProcessor] Stopped cache [cacheName=RBACGROUPCACHE, group=CRTX]
+[04:28:42,835][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ISOZONECONFIG, group=CRTX]
+[04:28:42,836][INFO][main][GridCacheProcessor] Stopped cache [cacheName=METERCONFIG, group=CRTX]
+[04:28:42,837][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ROOTCAUSECONFIG, group=CRTX]
+[04:28:42,838][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SITE, group=CRTX]
+[04:28:42,840][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SCASERVICEMAP, group=CRTX]
+[04:28:42,841][INFO][main][GridCacheProcessor] Stopped cache [cacheName=DPT_OBJECT_SM_STATE, group=OSM1]
+[04:28:42,842][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ROOTCAUSEDETAILCONFIG, group=CRTX]
+[04:28:42,843][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ROOTCAUSEFIXTYPEMAPPING, group=CRTX]
+[04:28:42,844][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ASSETCLASS, group=CRTX]
+[04:28:42,845][INFO][main][GridCacheProcessor] Stopped cache [cacheName=MAINTENANCEFIXTYPECONFIG, group=CRTX]
+[04:28:42,846][INFO][main][GridCacheProcessor] Stopped cache [cacheName=MSAMODEOPDEF, group=CRTX]
+[04:28:42,846][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SCACONFIG, group=CRTX]
+[04:28:42,847][INFO][main][GridCacheProcessor] Stopped cache [cacheName=OMPOINTLISTORGPOLICY, group=CRTX]
+[04:28:42,848][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SERVICECONFIG, group=CRTX]
+[04:28:42,849][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ISOCONFIG, group=CRTX]
+[04:28:42,849][INFO][main][GridCacheProcessor] Stopped cache [cacheName=MSACONFIG, group=CRTX]
+[04:28:42,850][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SCAMONITORASSETMAP, group=CRTX]
+[04:28:42,851][INFO][main][GridCacheProcessor] Stopped cache [cacheName=SETPOINT_OBJECT_SM_STATE, group=OSM]
+[04:28:42,852][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ASSETOUTPUTSERVICE, group=CRTX]
+[04:28:42,853][INFO][main][GridCacheProcessor] Stopped cache [cacheName=CACHE_LOAD_META_DATA]
+[04:28:42,854][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ASSETSPEC, group=CRTX]
+[04:28:42,854][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ignite-sys-cache]
+[04:28:42,871][INFO][main][FilePageStoreManager] Cleanup cache stores [total=7, left=0, cleanFiles=false]
+[04:28:42,880][INFO][main][IgniteKernal] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.8.1#20200521-sha1:864220966caa4157c4fee8a1bc85171623963604 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:00:17.919
+
+
+class org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.util.IgniteUtils.convertException(IgniteUtils.java:1067)
+	at org.apache.ignite.Ignition.start(Ignition.java:349)
+	at org.apache.ignite.startup.cmdline.CommandLineStartup.main(CommandLineStartup.java:300)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1965)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1276)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2045)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1703)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1117)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:1035)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:921)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:820)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:690)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:659)
+	at org.apache.ignite.Ignition.start(Ignition.java:346)
+	... 1 more
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.marshaller.MarshallerUtils$1@101cf747], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, soLinger=5, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null, skipAddrsRandomization=false]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:302)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:943)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1960)
+	... 11 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Conflicts during configuration merge for cache 'SETPOINT_OBJECT_SM_STATE' : 
+SETPOINT_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_ebd480b6_d893_44ca_9483_ce05ada51c3d_KEY, received=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_db1ec40d_b91d_4b03_83e7_a768c311f831_KEY
+valType is different: local=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_ebd480b6_d893_44ca_9483_ce05ada51c3d, received=SQL_CRTX_SETPOINT_OBJECT_SM_STATE_db1ec40d_b91d_4b03_83e7_a768c311f831
+
+Conflicts during configuration merge for cache 'DPT_OBJECT_SM_STATE' : 
+DPT_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_DPT_OBJECT_SM_STATE_07165327_1f9a_427c_be23_6e5eb52cb853_KEY, received=SQL_CRTX_DPT_OBJECT_SM_STATE_d2df2f05_86c2_410b_9611_79610b08103f_KEY
+valType is different: local=SQL_CRTX_DPT_OBJECT_SM_STATE_07165327_1f9a_427c_be23_6e5eb52cb853, received=SQL_CRTX_DPT_OBJECT_SM_STATE_d2df2f05_86c2_410b_9611_79610b08103f
+
+Conflicts during configuration merge for cache 'PAI_OBJECT_SM_STATE' : 
+PAI_OBJECT_SM_STATE conflict: 
+keyType is different: local=SQL_CRTX_PAI_OBJECT_SM_STATE_9bac915f_3c2f_44d2_a041_6e6dc71700d1_KEY, received=SQL_CRTX_PAI_OBJECT_SM_STATE_2f33c7a5_3cc2_486a_8a5e_3d2a9b0dbed9_KEY
+valType is different: local=SQL_CRTX_PAI_OBJECT_SM_STATE_9bac915f_3c2f_44d2_a041_6e6dc71700d1, received=SQL_CRTX_PAI_OBJECT_SM_STATE_2f33c7a5_3cc2_486a_8a5e_3d2a9b0dbed9
+
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1997)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:1116)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:427)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:2099)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:299)
+	... 13 more
+Failed to start grid: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
